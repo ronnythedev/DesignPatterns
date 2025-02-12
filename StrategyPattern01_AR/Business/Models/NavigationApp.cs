@@ -1,5 +1,6 @@
 namespace StrategyPattern01_AR.Business.Models;
     
+// Step 3: Implement the Context (NavigationApp)
 public class NavigationApp
 {
     private IRouteCalculationStrategy _routeStrategy;
@@ -9,22 +10,14 @@ public class NavigationApp
         _routeStrategy = routeStrategy;
     }
     
-    public void SetRouteStrategy(IRouteCalculationStrategy routeStrategy)
-    {
-        _routeStrategy = routeStrategy;
-    }
-    
     public void ShowRoute(string start, string end)
     {
-        var route = _routeStrategy.CalculateRoute(start, end);
+        var routeSteps = _routeStrategy.CalculateRoute(start, end);
         
-        foreach (var step in route)
+        foreach (var step in routeSteps)
         {
             Console.WriteLine(step);
         }
-        
-        Console.WriteLine($"Estimated Time: {_routeStrategy.CalculateEstimatedTime(start, end)} minutes");
-        Console.WriteLine($"Estimated Cost: ${_routeStrategy.CalculateEstimatedCost(start, end)}");
     }
 
 }

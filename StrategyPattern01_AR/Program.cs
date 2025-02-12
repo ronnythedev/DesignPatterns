@@ -3,12 +3,14 @@
 Console.WriteLine("=== Strategy Pattern: After Refactor ===\n");
 
 var app = new NavigationApp(new DrivingRoute());
+
+Console.WriteLine("Driving route...");
 app.ShowRoute("Home", "Work");
 
-Console.WriteLine("\nSwitching to walking route...\n");
-app.SetRouteStrategy(new WalkingRoute());
+app = new NavigationApp(new WalkingRoute());
+Console.WriteLine("\nWalking route...");
 app.ShowRoute("Home", "Park");
 
-Console.WriteLine("\nSwitching to biking route...\n");
-app.SetRouteStrategy(new BikingRoute());
+app = new NavigationApp(new BikingRoute());
+Console.WriteLine("\nBiking route...");
 app.ShowRoute("Home", "Gym");
