@@ -1,8 +1,10 @@
 ﻿using StrategyPattern01_BR.Business.Models;
 
-NavigationApp app = new NavigationApp();
+Console.WriteLine("=== Strategy Pattern: Before Refactor ===\n");
 
-List<string> drivingRoute = app.CalculateDrivingRoute("Home", "Work");
+var app = new NavigationApp();
+
+var drivingRoute = app.CalculateDrivingRoute("Home", "Work");
 
 Console.WriteLine("Driving Route:");
 
@@ -11,7 +13,7 @@ foreach (var step in drivingRoute)
     Console.WriteLine(step);
 }
 
-List<string> walkingRoute = app.CalculateWalkingRoute("Home", "Park");
+var walkingRoute = app.CalculateWalkingRoute("Home", "Park");
 
 Console.WriteLine("\nWalking Route:");
 
@@ -20,7 +22,7 @@ foreach (var step in walkingRoute)
     Console.WriteLine(step);
 }
 
-List<string> bikingRoute = app.CalculateBikingRoute("Home", "Gym");
+var bikingRoute = app.CalculateBikingRoute("Home", "Gym");
 
 Console.WriteLine("\nBiking Route:");
 
