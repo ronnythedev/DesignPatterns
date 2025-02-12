@@ -18,7 +18,7 @@ public class DragonEventManager
         // Here is the problem: DragonEventManger is responsible for all what happens when a dragon attacks.
         // This breaks the Single Responsibility Principle.
         // Imagine if the game has 100 different characters, each with different reactions to a dragon attack!
-        Console.WriteLine($"Dragon attacks with power {dragonPower}!");
+        Console.WriteLine($"A Dragon appears! Dragon attacks with power {dragonPower}!");
         _knight.React();
         _mage.React(dragonPower);
         _merchant.React();

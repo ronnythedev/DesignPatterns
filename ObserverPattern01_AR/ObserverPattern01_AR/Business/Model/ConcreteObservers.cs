@@ -10,7 +10,7 @@ public class Knight : IObserver
 
 public class Mage : IObserver
 {
-    private DragonEventManager _dragonEventManager;
+    private readonly DragonEventManager _dragonEventManager;
     
     public Mage(DragonEventManager dragonEventManager)
     {
@@ -37,3 +37,5 @@ public class Merchant : IObserver
         Console.WriteLine("Merchant hides behind a barrel!");
     }
 }
+
+public class 

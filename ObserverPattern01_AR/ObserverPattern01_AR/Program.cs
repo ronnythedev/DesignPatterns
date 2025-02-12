@@ -1,3 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using ObserverPattern01_AR.Business.Model;
 
-Console.WriteLine("Hello, World!");
+var dragonEventManager = new DragonEventManager();
+
+var knight = new Knight();
+var mage = new Mage(dragonEventManager);
+var merchant = new Merchant();
+
+dragonEventManager.AddObserver(knight);
+dragonEventManager.AddObserver(mage);
+dragonEventManager.AddObserver(merchant);
+
+dragonEventManager.DragonAttacks(60);

@@ -2,7 +2,7 @@ namespace ObserverPattern01_AR.Business.Model;
 
 public class DragonEventManager
 {
-    private List<IObserver> _observers = new List<IObserver>();
+    private readonly List<IObserver> _observers = new List<IObserver>();
     private int _dragonPower;
     
     public void AddObserver(IObserver observer)
@@ -14,8 +14,8 @@ public class DragonEventManager
     {
         _observers.Remove(observer);
     }
-    
-    public void NotifyObservers()
+
+    private void NotifyObservers()
     {
         foreach (var observer in _observers)
         {
@@ -30,7 +30,7 @@ public class DragonEventManager
 
     public void DragonAttacks(int dragonPower)
     {
-        Console.WriteLine("A dragon appears!");
+        Console.WriteLine($"A Dragon appears! Dragon attacks with power {dragonPower}!");
         _dragonPower = dragonPower;
         NotifyObservers();
     }
