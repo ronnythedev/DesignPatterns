@@ -10,7 +10,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern01_BR", "Str
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_AfterRefactor", "01_AfterRefactor", "{DB6462BB-C8B7-4216-954E-B7AA6D5F6C7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern01_AR", "StrategyPattern01_AR\StrategyPattern01_AR\StrategyPattern01_AR.csproj", "{EBD8084F-61DD-493E-B44A-B2B0B75A1912}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern01_AR", "StrategyPattern01_AR\StrategyPattern01_AR.csproj", "{EBD8084F-61DD-493E-B44A-B2B0B75A1912}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
