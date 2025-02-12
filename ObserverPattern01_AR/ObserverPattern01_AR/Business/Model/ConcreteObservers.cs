@@ -38,4 +38,18 @@ public class Merchant : IObserver
     }
 }
 
-public class 
+public class Rogue : IObserver
+{
+    public void React()
+    {
+        Console.WriteLine("Rogue sneaks away!");
+    }
+}
+
+public class Priest : IObserver
+{
+    public void React()
+    {
+        Console.WriteLine("Priest prays for salvation!");
+    }
+}
