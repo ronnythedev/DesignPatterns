@@ -1,41 +1,41 @@
 namespace DecoratorPattern02_AR.Business.Model;
 
-public class WithGap : InsuranceCostDecorator
+public class GapCoverageDecorator : InsuranceCostAbstractDecorator
 {
-    public WithGap(IInsuranceCostProvider insuranceCost) : base(insuranceCost) { }
+    public GapCoverageDecorator(IInsuranceCostProvider insuranceCost) : base(insuranceCost) { }
 
     public override decimal Cost()
     {
-        return _InsuranceCostProvider.Cost() + 50;
+        return InsuranceCostProvider.Cost() + 50;
     }
 }
 
-public class WithTheftProtection : InsuranceCostDecorator
+public class TheftProtectionDecorator : InsuranceCostAbstractDecorator
 {
-    public WithTheftProtection(IInsuranceCostProvider insuranceCost) : base(insuranceCost) { }
+    public TheftProtectionDecorator(IInsuranceCostProvider insuranceCost) : base(insuranceCost) { }
 
     public override decimal Cost()
     {
-        return _InsuranceCostProvider.Cost() + 30;
+        return InsuranceCostProvider.Cost() + 30;
     }
 }
 
-public class WithTireAndWheelProtection : InsuranceCostDecorator
+public class TireAndWheelProtectionDecorator : InsuranceCostAbstractDecorator
 {
-    public WithTireAndWheelProtection(IInsuranceCostProvider insuranceCost) : base(insuranceCost) { }
+    public TireAndWheelProtectionDecorator(IInsuranceCostProvider insuranceCost) : base(insuranceCost) { }
 
     public override decimal Cost()
     {
-        return _InsuranceCostProvider.Cost() + 20;
+        return InsuranceCostProvider.Cost() + 20;
     }
 }
 
-public class WithKeyReplacementCoverage : InsuranceCostDecorator
+public class KeyReplacementCoverageDecorator : InsuranceCostAbstractDecorator
 {
-    public WithKeyReplacementCoverage(IInsuranceCostProvider insuranceCost) : base(insuranceCost) { }
+    public KeyReplacementCoverageDecorator(IInsuranceCostProvider insuranceCost) : base(insuranceCost) { }
 
     public override decimal Cost()
     {
-        return _InsuranceCostProvider.Cost() + 10;
+        return InsuranceCostProvider.Cost() + 10;
     }
 }
