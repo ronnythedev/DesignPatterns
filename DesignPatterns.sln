@@ -56,6 +56,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_AfterRefactor", "01_Afte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern_Simple01_BR", "FactoryPattern_Simple01_BR\FactoryPattern_Simple01_BR\FactoryPattern_Simple01_BR.csproj", "{33F14631-42C2-44FB-8964-B8E3B9EFF960}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryPattern_Simple01_AR", "FactoryPattern_Simple01_AR\FactoryPattern_Simple01_AR\FactoryPattern_Simple01_AR.csproj", "{9AAC6A17-9512-41F3-A455-EEEF017A302E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +88,7 @@ Global
 		{F8EE5A75-2865-4D6E-A03F-45D315A96E84} = {DD35644A-1595-4BEB-B44E-C140FB60CE39}
 		{0094EB9C-755A-4257-8ECF-4ABEB937BD94} = {DD35644A-1595-4BEB-B44E-C140FB60CE39}
 		{33F14631-42C2-44FB-8964-B8E3B9EFF960} = {F8EE5A75-2865-4D6E-A03F-45D315A96E84}
+		{9AAC6A17-9512-41F3-A455-EEEF017A302E} = {0094EB9C-755A-4257-8ECF-4ABEB937BD94}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3AAA2A57-7B64-44F7-BEA4-789E646EAEA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -124,5 +127,9 @@ Global
 		{33F14631-42C2-44FB-8964-B8E3B9EFF960}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33F14631-42C2-44FB-8964-B8E3B9EFF960}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33F14631-42C2-44FB-8964-B8E3B9EFF960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AAC6A17-9512-41F3-A455-EEEF017A302E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AAC6A17-9512-41F3-A455-EEEF017A302E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AAC6A17-9512-41F3-A455-EEEF017A302E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AAC6A17-9512-41F3-A455-EEEF017A302E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
