@@ -68,6 +68,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorySimplePattern01_BR",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorySimplePattern01_AR", "FactorySimplePattern01_AR\FactorySimplePattern01_AR\FactorySimplePattern01_AR.csproj", "{0A7E7DF0-4D33-4653-91E8-35297930DBFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodPattern01_AR", "FactoryMethodPattern01_AR\FactoryMethodPattern01_AR\FactoryMethodPattern01_AR.csproj", "{7A7E1D6F-1CBF-48E7-AF63-77B653A42625}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -103,6 +105,7 @@ Global
 		{DF6FB25A-B7EE-4DA5-9CF3-55D1B6CD0F66} = {53E94860-9FE2-4520-B247-E8C7C96ACFE2}
 		{401D70C5-7D55-47B8-BF05-2443B65AA344} = {F8EE5A75-2865-4D6E-A03F-45D315A96E84}
 		{0A7E7DF0-4D33-4653-91E8-35297930DBFC} = {0094EB9C-755A-4257-8ECF-4ABEB937BD94}
+		{7A7E1D6F-1CBF-48E7-AF63-77B653A42625} = {3EFA9C28-ECE0-4F82-928E-321D357CE403}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3AAA2A57-7B64-44F7-BEA4-789E646EAEA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -149,5 +152,9 @@ Global
 		{0A7E7DF0-4D33-4653-91E8-35297930DBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A7E7DF0-4D33-4653-91E8-35297930DBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A7E7DF0-4D33-4653-91E8-35297930DBFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A7E1D6F-1CBF-48E7-AF63-77B653A42625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7E1D6F-1CBF-48E7-AF63-77B653A42625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A7E1D6F-1CBF-48E7-AF63-77B653A42625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A7E1D6F-1CBF-48E7-AF63-77B653A42625}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
